@@ -1,0 +1,148 @@
+/*Font face import*/
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/Manrope-Regular.eot');
+    src: url('fonts/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Manrope-Regular.woff2') format('woff2'),
+         url('fonts/Manrope-Regular.woff') format('woff'),
+         url('fonts/Manrope-Regular.ttf')  format('truetype'),
+         url('fonts/Manrope-Regular.svg#Manrope') format('svg');
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('fonts/Fraunces144pt-SemiBold.eot');
+    src: url('fonts/Fraunces144pt-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Fraunces144pt-SemiBold.woff2') format('woff2'),
+         url('fonts/Fraunces144pt-SemiBold.woff') format('woff'),
+         url('fonts/Fraunces144pt-SemiBold.ttf')  format('truetype'),
+         url('fonts/Fraunces144pt-SemiBold.svg#Fraunces 144pt SemiBold') format('svg');
+}
+
+/*General css*/
+html{
+
+    font-size: 62.5%;
+    
+
+}
+
+*{
+
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family:"Manrope" ,Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+       
+}
+
+:root{
+    --color-primary:#24053e;
+    --color-accent:#44ffa1;
+    --color-secondary:#ffffff;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: "Fraunces",Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2 {
+
+    font-size: 4rem;
+}
+
+p {
+
+    font-family: "Manrope",Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+
+.founder {
+
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    width: 34.3rem;
+    height: 37.5rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.founder-image img {
+
+    
+    width: 270px;
+    
+    
+}
+.founder-block {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 943px;
+    height: 745px;
+}
+
+.footer {
+
+    background-color: aqua;
+}
+
+@media screen and (min-width:768px){
+
+    .grid1x2 {
+
+        width: 943px;
+        height: 745px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .founder {
+
+        background-color: var(--color-primary);
+        color: var(--color-secondary);
+        width: 56rem;
+        height: 37.5rem;
+        padding: 4rem;
+        text-align: left;
+        padding: 4rem 4rem 2rem 6rem;
+        position: relative;
+    }
+
+    .founder-image img {
+
+    
+        width: 450px;
+        margin-bottom: 0;
+        margin-right: -26rem;
+        margin-bottom: 40rem;
+        
+    }
+
+    .founder > img {
+        position: absolute;
+        width: 300px;
+        bottom: -30%;  
+        
+        
+    }
+
+
+    
+    
+
+    
+}
